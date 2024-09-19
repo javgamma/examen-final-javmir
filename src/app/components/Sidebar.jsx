@@ -10,8 +10,8 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="flex h-screen flex-col justify-between border bg-whit w-[300px] px-4 ">
-      <div className="px-4 py-6 flex flex-col ">
+    <div className="flex fixed  h-screen flex-col justify-between border bg-white w-[300px] px-4 ">
+      <div className="px-4 py-6 flex flex-col  ">
         <span className="flex  text-center items-center h-10 w-[80px]  rounded-full bg-orange-400 text-sm text-white font-bold p-2">
           Examen Final
         </span>
@@ -19,14 +19,14 @@ const Sidebar = () => {
         <ul className="mt-6 flex flex-col ">
           <Link
             href="#"
-            className="flex gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+            className="flex gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 "
           >
             <LucideLayoutTemplate size={20} />
             <span>Card Generator</span>
           </Link>
 
           <Link
-            href="#"
+            href="/digitalclock"
             className="flex gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
           >
             <Users />
