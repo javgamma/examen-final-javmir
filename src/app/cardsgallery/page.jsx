@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Cardsection from './Cardsection';
 
-const Cardsgalery = () => {
+const Cardsgallery = () => {
   const [products, setProducts] = useState([]);
 
   const fetchData = async () => {
@@ -28,4 +28,4 @@ const Cardsgalery = () => {
   );
 };
 
-export default Cardsgalery;
+export default Cardsgallery;
