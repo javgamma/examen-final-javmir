@@ -19,7 +19,7 @@ const Cardsgallery = () => {
 
   useEffect(() => {
     getCoffee(); 
-  }, []);
+  });
 
   return (
     <div>
