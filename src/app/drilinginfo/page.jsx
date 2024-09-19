@@ -1,9 +1,10 @@
 import React from 'react'
+import Container from './Container'
 
 const page = () => {
   return (
-    <div>
-      driling info
+    <div >
+     <Container/>
     </div>
   )
 }
