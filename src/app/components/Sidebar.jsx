@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <div className="flex fixed  h-screen flex-col justify-between border bg-white w-[300px] px-4 ">
       <div className="px-4 py-6 flex flex-col  ">
-        <span className="flex  text-center items-center h-10 w-[80px]  rounded-full bg-orange-400 text-sm text-white font-bold p-2">
+        <span className="flex  text-center items-center h-12 w-[80px]  rounded-full bg-orange-400 text-sm text-white font-bold p-2">
           Examen Final
         </span>
 
