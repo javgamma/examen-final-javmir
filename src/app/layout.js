@@ -1,8 +1,14 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
+import { useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,} from "@tanstack/react-query";
+import { SqProvider } from "@/components/SqProvider";
 
-
+// const queryClient = new QueryClient();
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,16 +28,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-     
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
-      >
-        <Sidebar/>
-        {children}
-      </body>
-    </html>
+      <SqProvider>
+    <html lang="es">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
+        >
+          <Sidebar />
+          {children}
+        </body>
+      </html>
+        </SqProvider>
   );
 }
-
-
